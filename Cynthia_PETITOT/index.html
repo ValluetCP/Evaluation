@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+    <!-- Font ansome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/sujet.js" defer></script>
+    <title>WF3 - évalution 2</title>
+    
+</head>
+<body>
+    <!-- ******************* HEADER ******************* -->
+    <header>
+        <div class="myDiv" style="display: none;">
+            <ul>
+                <li>Louer une voiture</li>
+                <li>Louer un utilitaire</li>
+                <li>Réserver un chauffeur</li>
+                <li>Découvrez nos agences</li>
+                <li>Mon compte</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <!-- <button id="toggleButton"><i class="fa-solid fa-bars menu_barre"></i></button> -->
+        <div  id="toggleButton" class="menu"><a href=""></a>
+            <i class="fa-solid fa-bars menu_barre"></i>
+        </div>
+        <div class="titre">
+            <h1>Bienvenue à bord</h1>
+            <p>Location de voiture 24h/24 et 7j/7</p>
+        </div>
+        <div id="banner">
+        </div>
+         <!-- Formulaire -->
+        <div class="formulaire">
+            <form>
+                <select name="selectionner" id="select1">
+                    <option value="adresse">Adresse de départ</option>
+                    <option value="autre">Autre</option>
+                </select>
+                <div class="input-with-icon" style="position: relative;">
+                <!-- <div class="input-with-icon" style="position: relative; width:240px;"> -->
+                <i class="fa-regular fa-calendar"></i>
+                <input type="text" id="defaultDate" placeholder="  Début de location" />
+                </div>
+                <div class="input-with-icon" style="position: relative;">
+                <i class="fa-regular fa-calendar"></i>
+                <input type="text" id="defaultDate2" placeholder="  Fin de location" />
+                </div>
+            </form>
+            <button class="valider">Valider ma recherche</button>
+        </div>
+         
+    </header>
+    <!-- ******************* MAIN ******************* -->
+    <main>
+        <div class="container">
+            <div class="sect">
+                <p class="resultat">7 résultats</p>
+                <div>
+                    <select name="selectionner" id="selection">
+                        <option value="">Prix croissant</option>
+                    </select>
+                </div>
+            </div>
+            <section class="sect1">
+                <!-- voiture 1 -->
+                <div class="module">
+                    <div class="parent">
+                        <div class="prev"><i class="fa-solid fa-play fa-rotate-180"></i></div>
+                        <div class="next"><i class="fa-solid fa-play"></i></div>
+                        <div class="bg">
+                            <!-- ici backgound -->
+                        </div>
+                    </div>
+                    <div class="txt_sect1">
+                        <div>
+                            <div class="disparition">
+                                <h2>Peugeot 208</h2>
+                                <p>Diesel 5 portes GPS. Autoradio. Forfait 1000km (0,5/km supplémentaire).</p>
+                                <p>999€ - Agence de Paris</p>
+                            </div>
+                            <div class="btn_vert">
+                                <button class="bouton">Réserver et payer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- voiture 2 -->
+                <div class="module">
+                    <div class="parent">
+                        <div class="prev2"><i class="fa-solid fa-play fa-rotate-180"></i></div>
+                        <div class="next2"><i class="fa-solid fa-play"></i></div>
+                        <div class="bg2">
+                            <!-- ici backgound -->
+                        </div>
+                    </div>
+                    <div class="txt_sect1">
+                        <div>
+                            <div class="disparition">
+                                <h2>Ford Focus</h2>
+                                <p>Diesel 5 portes GPS. Autoradio. Forfait 1000km (0,5/km supplémentaire).</p>
+                                <p>999€ - Agence de Paris</p>
+                            </div>
+                            <div class="btn_vert">
+                                <button class="bouton">Réserver et payer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- voiture 3 -->
+                <div class="module">
+                    <div class="parent">
+                        <div class="prev3"><i class="fa-solid fa-play fa-rotate-180"></i></div>
+                        <div class="next3"><i class="fa-solid fa-play"></i></div>
+                        <div class="bg3">
+                            <!-- ici backgound -->
+                        </div>
+                    </div>
+                    <div class="txt_sect1">
+                        <div>
+                            <div class="disparition">
+                                <h2>Audi A1</h2>
+                                <p>Diesel 5 portes GPS. Autoradio. Forfait 1000km (0,5/km supplémentaire).</p>
+                                <p>1100€ - Agence de Paris</p>
+                            </div>
+                            <div class="btn_vert">
+                                <button class="bouton">Réserver et payer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- voiture 4 -->
+                <div class="module">
+                    <div class="parent">
+                        <div class="prev4"><i class="fa-solid fa-play fa-rotate-180"></i></div>
+                        <div class="next4"><i class="fa-solid fa-play"></i></div>
+                        <div class="bg4">
+                            <!-- ici backgound -->
+                        </div>
+                    </div>
+                    <div class="txt_sect1">
+                        <div>
+                            <div class="disparition">
+                                <h2>Opel Mokka</h2>
+                                <p>Diesel 5 portes GPS. Autoradio. Forfait 1000km (0,5/km supplémentaire).</p>
+                                <p>1150€ - Agence de Paris</p>
+                            </div>
+                            <div class="btn_vert">
+                                <button class="bouton">Réserver et payer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- voiture 5 (phase cachée) -->
+                <div class="module">
+                    <div class="parent">
+                        <div class="prev5"><i class="fa-solid fa-play fa-rotate-180"></i></div>
+                        <div class="next5"><i class="fa-solid fa-play"></i></div>
+                        <div class="bg5">
+                            <!-- ici backgound -->
+                        </div>
+                    </div>
+                    <div class="txt_sect1">
+                        <div>
+                            <div class="disparition">
+                                <h2>Peugeot 208</h2>
+                                <p>Diesel 5 portes GPS. Autoradio. Forfait 1000km (0,5/km supplémentaire).</p>
+                                <p>999€ - Agence de Paris</p>
+                            </div>
+                            <div class="btn_vert">
+                                <button class="bouton">Réserver et payer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- voiture 6 -->
+                <div class="module">
+                    <div class="parent">
+                        <div class="prev6"><i class="fa-solid fa-play fa-rotate-180"></i></div>
+                        <div class="next6"><i class="fa-solid fa-play"></i></div>
+                        <div class="bg6">
+                            <!-- ici backgound -->
+                        </div>
+                    </div>
+                    <div class="txt_sect1">
+                        <div>
+                            <div class="disparition">
+                                <h2>Ford Focus</h2>
+                                <p>Diesel 5 portes GPS. Autoradio. Forfait 1000km (0,5/km supplémentaire).</p>
+                                <p>999€ - Agence de Paris</p>
+                            </div>
+                            <div class="btn_vert">
+                                <button class="bouton">Réserver et payer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- voiture 7 -->
+                <div class="module">
+                    <div class="parent">
+                        <div class="prev7"><i class="fa-solid fa-play fa-rotate-180"></i></div>
+                        <div class="next7"><i class="fa-solid fa-play"></i></div>
+                        <div class="bg7">
+                            <!-- ici backgound -->
+                        </div>
+                    </div>
+                    <div class="txt_sect1">
+                        <div>
+                            <div class="disparition">
+                                <h2>Audi A1</h2>
+                                <p>Diesel 5 portes GPS. Autoradio. Forfait 1000km (0,5/km supplémentaire).</p>
+                                <p>1100€ - Agence de Paris</p>
+                            </div>
+                            <div class="btn_vert">
+                                <button class="bouton">Réserver et payer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </section>
+        </div>
+    </main>
+    <!-- ******************* FOOTER ******************* -->
+    <footer>
+        <div class="ftr">
+            <div class="ftr_img">
+                <img src="./img/agence.jpg" alt="">
+            </div>
+            <div>
+                <p>
+                    Notre Agence de Paris <br>
+                    300 boulevard de vaugirard, 75015, Paris <br>
+                    Ouvert 7j/7 de 09h à 13h et de 14h à 20h <br>
+                    01 49 78 21 33 <br>
+                    contact@vtc.com
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ******************** NAV ******************** -->
+     
+</body>
+</html>

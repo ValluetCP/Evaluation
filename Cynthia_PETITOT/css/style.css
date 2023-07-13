@@ -1,0 +1,633 @@
+/*************** RESET ***************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   vertical-align: baseline;
+}
+*{
+    box-sizing: border-box;/*pour garder la meme taille*/
+}
+iframe, img{
+    width:100%;
+    display:block;
+}
+
+/* ------------------- Fin RESET ------------------- */
+
+/* //////// FONT //////// */
+
+/* https://fonts.google.com/ */
+
+/* @font-face {
+    font-family: "Roboto-Black";
+    src: url("font/Roboto-Black.ttf");
+  } */
+
+/* @font-face {
+  font-family: ;
+  src: url();
+} */
+
+/* /////////////////////////// CODE /////////////////////////// */
+
+
+/* Formulaire */
+
+
+/* Deuxième partie */
+
+.picture2 {
+    display: none;
+}
+.card:hover .picture1 {
+    display: none;
+}
+.card:hover .picture2 {
+    display: block;
+}
+
+
+/******************* HEADER *******************/
+/* Position */
+
+#menu{
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.position-relative{
+    position: relative;
+}
+
+/* banner */
+#banner{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 700px;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+.titre{
+    margin: auto;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+}
+
+/* Formulaire */
+
+.formulaire{
+    position: absolute;
+    display: flex;
+    bottom: 300px;
+    left: 20%;
+}
+
+form{
+    background-color: rgba(255, 255, 255, 0.564);
+    display: flex;
+}
+
+/* DATE PICKER */
+.fa-calendar {
+    position: absolute;
+    top: 18px;
+    right: 28px;
+}
+
+
+
+#defaultDate,
+#defaultDate2,
+select{
+width: 250px;
+height: 40px;
+border: 1px solid white;
+border-radius: 5px;
+margin: 5px 10px;
+}
+
+.valider{
+    width: 250px;
+    height: 50px;
+    background-color: #419b42aa;
+    color: white;
+    border: none;
+}
+
+.bouton{
+    margin-top: 100px;
+}
+
+/* .btn_vert{
+    height: 100%;
+    display: flex;
+    align-items: center;
+} */
+
+/* SLIDE TOGGLE */
+
+/* body{
+    margin: 0;
+    padding: 0;
+} */
+#toggleButton{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#myDiv{
+    position: absolute;
+
+}
+ul{
+    margin-top: 50px;
+    background-color: white;
+    padding: 20px;
+    list-style-type: none;
+}
+
+ul>li{
+    margin: 10px;
+    color: grey;
+}
+
+/* MENU */
+
+.menu{
+    color: white;
+    border: 1px solid ;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.menu_barre{
+    font-size: 50px;
+    /* font-weight: 1px; */
+    color: white;
+    
+
+}
+
+
+
+/*  --------------- Fin HEADER --------------- */
+
+/******************* NAV *******************/
+
+/*  --------------- Fin NAV--------------- */
+
+
+/*//////////////////// MAIN ////////////////////*/
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+main{
+    position: absolute;
+    top: 700px;
+    width: 70%;
+    margin: auto;
+    left: 15%;
+}
+
+/***************** DIV *****************/
+
+
+.sect{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#selection{
+    background-image: linear-gradient(#fafafa, #e6e6e6 );
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.resultat{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/***************** SECTION 1 *****************/
+
+.module{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.bouton{
+    background-color:#419b43;
+    color: white;
+    /* height: 50px; */
+    border-radius: 5px;
+    padding: 5px 20px;
+    border: 1px solid #419b43;
+}
+
+/* .sect1{
+    margin-bottom: 50px;
+} */
+
+.txt_sect1 p{
+    margin: 10px 0px;
+    /* width: 60%;  */
+}
+
+.txt_sect1>div{
+        margin-left: 95px;
+}
+
+/* CAROUSSEL */
+.caroussel{
+   width: 40%; 
+}
+
+.bg{
+    /* margin: auto; */
+    height: 200px;
+    width: 350px;
+    background-image: url("../img/vehicule1.png");
+    
+}
+.bg2{
+    /* margin: auto; */
+    height: 200px;
+    width: 350px;
+    background-image: url("../img/vehicule2.png");
+    
+}
+.bg3{
+    /* margin: auto; */
+    height: 200px;
+    width: 350px;
+    background-image: url("../img/vehicule3.png");
+    
+}
+.bg4{
+    /* margin: auto; */
+    height: 200px;
+    width: 350px;
+    background-image: url("../img/vehicule4.png");
+    
+}
+
+.bg5{
+    /* margin: auto; */
+    height: 200px;
+    width: 350px;
+    background-image: url("../img/vehicule1.png");
+    
+}
+.bg6{
+    /* margin: auto; */
+    height: 200px;
+    width: 350px;
+    background-image: url("../img/vehicule2.png");
+    
+}
+.bg7{
+    /* margin: auto; */
+    height: 200px;
+    width: 350px;
+    background-image: url("../img/vehicule3.png");
+    
+}
+
+.next,
+.next2,
+.next3,
+.next4,
+.next5,
+.next6,
+.next7{
+    font-size: xx-large;
+    position: absolute;
+    top: 80px;
+    right: -30px;
+    /* top: 150px;
+    right: 450px; */
+}
+
+.prev,
+.prev2,
+.prev3,
+.prev4,
+.prev5,
+.prev6,
+.prev7{
+    font-size: xx-large;
+    position: absolute;
+    top: 80px;
+    /* left: 35%; */
+    /* top: 150px; */
+    left: -30px;
+}
+
+.parent{
+    position: relative;
+    /* margin: auto; */
+    width: 350px;
+}
+
+.fa-solid{
+    font-size: 20px;
+}
+
+hr{
+    margin-bottom: 80px;
+}
+
+/*  ------------- Fin SECTION 1 ------------- */
+
+/***************** SECTION 2 *****************/
+
+/*  ------------- Fin SECTION 2 ------------- */
+
+/***************** SECTION 3 *****************/
+
+/*  ------------- Fin SECTION 3 ------------- */
+
+/***************** SECTION 4 *****************/
+
+/*  ------------- Fin SECTION 4 ------------- */
+
+/*  --------------- Fin MAIN--------------- */
+
+
+/*//////////////////// FOOTER ////////////////////*/
+
+footer{
+    
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    top: 3424px;
+    
+}
+
+.ftr{
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.ftr_img{
+    width: 200px;
+}
+/* main{
+    position: absolute;
+    top: 700px;
+    width: 70%;
+    margin: auto;
+    left: 15%;
+} */
+
+/*  --------------- Fin FOOTER--------------- */
+
+
+
+
+/*//////////////// MEDIA QUERY /////////////////*/
+
+/* MEDIAQUERY - https://getbootstrap.com/docs/5.3/layout/breakpoints/#media-queries */
+
+/***************** max-width: px *****************/
+/* @media (max-width: px) {
+
+} */
+
+
+
+
+
+/***************** max-width: 1400px *****************/
+@media (max-width: 1400px) {
+    .formulaire {
+        left: 8%;
+    }
+
+    footer {
+        top: 3582px;
+    }
+}
+
+/***************** max-width: 1220px *****************/
+@media (max-width: 1220px) {
+    /* .formulaire {
+        left: 8%;
+    } */
+
+    .txt_sect1>div {
+        margin-left: 35px;
+    }
+    form{
+        width: 100%;
+        bottom: 245px;
+        left: 5%;
+        /* display: flex; */
+        justify-content: space-between;
+        
+    }
+
+    .formulaire{
+        width: 90%;
+        /* margin: auto; */
+        display: block;
+        bottom: 245px;
+        left: 5%;
+        
+    }
+
+    select,
+    #defaultDate,
+    #defaultDate2{
+        width: 270px;
+        /* float: left; */
+        
+    }
+
+    .valider{
+        width: 100%;
+    }
+    .fa-calendar {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+    }
+
+    .disparition{
+        display: none;
+    }
+
+    footer {
+        top: 3060px;
+    }
+
+    
+}
+
+
+/***************** max-width: 960px *****************/
+@media (max-width: 960px) {
+
+    h1{
+        font-size: 40px;
+    }
+
+    form{
+        width: 100%;
+        bottom: 245px;
+        left: 5%;
+        /* display: flex; */
+        justify-content: space-between;
+        
+    }
+
+    .formulaire{
+        width: 90%;
+        /* margin: auto; */
+        display: block;
+        bottom: 245px;
+        left: 5%;
+        
+    }
+
+    select,
+    #defaultDate,
+    #defaultDate2{
+        width: 215px;
+        /* float: left; */
+        
+    }
+
+    .valider{
+        width: 100%;
+    }
+    .fa-calendar {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+    }
+
+    .disparition{
+        display: none;
+    }
+
+    /* .btn_vert{
+        margin-top: 100px;
+        margin-left: 30px;
+    }
+     */
+}
+
+/***************** max-width: 890px *****************/
+@media (max-width: 890px) {
+    .bouton {
+        padding: 5px 10px;
+    }
+
+    main {
+        position: absolute;
+        width: 80%;
+        left: 12%;
+    }
+}
+
+
+/***************** max-width: 768px *****************/
+
+@media (max-width: 768px) {
+    
+    form{
+        width: 100%;
+        bottom: 0px;
+        left: 5%;
+        display: block;
+        padding: 5px;
+        
+    }
+
+    .formulaire{
+        width: 90%;
+        /* margin: auto; */
+        bottom: 370px;
+        left: 5%;
+        
+    }
+
+    select,
+    #defaultDate,
+    #defaultDate2{
+        width: 100%;
+        margin: 5px 0px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    main {
+        width: 100%;
+        left: 0;
+    }
+
+    footer{
+        position: absolute;
+    }
+
+    footer p{
+        font-size: 13px;
+        margin-left: 10px;
+    }
+
+    .ftr {
+        width: 430px;
+    }
+
+    .prev, .prev2, .prev3, .prev4, .prev5, .prev6, .prev7 {
+        left: 0px;
+    }
+    
+    .next, .next2, .next3, .next4, .next5, .next6, .next7 {
+        right: 0px;
+    }
+
+    .fa-solid {
+        font-size: 15px;
+    }
+}
